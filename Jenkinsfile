@@ -29,24 +29,3 @@ pipeline {
         }
     }
 }
-
-
-            }
-        }
-        stage('Build') {
-            steps {
-                // Get some code from a GitHub repository
-                // git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sidd-harth/jenkins-hello-world.git'
-
-                // Run Maven Clean Package.
-                sh "mvn clean package -DskipTests=true"
-            }
-        }    
-        stage('Unit Test') {
-            steps {
-                sh "mvn test"
-            }
-        }
-    }
-}
-
