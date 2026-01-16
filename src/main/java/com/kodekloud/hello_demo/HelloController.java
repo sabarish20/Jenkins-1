@@ -8,8 +8,9 @@ public class HelloController {
 
     @RequestMapping("/hello")
     String hello() {
-        return "Hola, KodeKloud community!";
+        return "Hello, KodeKloud community!";
     }
 
 
 }
+
